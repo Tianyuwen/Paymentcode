@@ -1,0 +1,8 @@
+/**index.wxss**/
+.codetext{
+  width: 500rpx;
+  
+}
+page{
+  background: #fff;
+}

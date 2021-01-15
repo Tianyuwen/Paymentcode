@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<!-- <view class="cu-list menu text-or"> 
+    <view class=" cu-item arrow ">
+      <view class=" content ">
+        <text class=" cuIcon-warn text-green"></text>
+  <text class="text-grey">文本</text>
+</view>
+
+</view>
+</view> -->
+<view class="container bg-white animation-slide-bottom">
+
+  <view style="width:100%">
+    <view class="flex margin justify-around align-center bg-green padding-xl radius  shadow" bindtap="scanCode"
+      data-name="weixin">
+      
+      <image src="/images/weixin.svg" style="width:64rpx;height:64rpx" wx:if="{{isshow!=1}}"></image>
+      <view class="" wx:if="{{isshow!=1}}">点击扫码/相册中选择微信收款码</view>
+      <view class="text-white " wx:else>点击扫码/相册中选择二维码</view>
+      <view class="cuIcon-roundcheckfill lg " wx:if="{{weixinCode!=''}}"></view>
+    </view>
+
+    <view class="flex margin justify-around align-center bg-blue padding-xl radius  shadow" bindtap="scanCode"
+      data-name="zfb">
+      <image src="/images/zfb.svg" style="width:64rpx;height:64rpx" wx:if="{{isshow!=1}}"></image>
+      <view class="text-white" wx:if="{{isshow!=1}}">点击扫码/相册中选择支付宝收款码</view>
+      <view class="text-white " wx:else>点击扫码/相册中选择二维码</view>
+      <view class="cuIcon-roundcheckfill lg " wx:if="{{zfbCode!=''}}"></view>
+    </view>
+
+    <view class="flex margin justify-around align-center  padding-xl radius  shadow" style="background:#1bc1fa"
+      bindtap="scanCode" data-name="qq">
+<block  wx:if="{{isshow!=1}}">
+      <image src="/images/qq.svg" style="width:64rpx;height:64rpx"></image>
+      <view class="text-white " >点击扫码/相册中选择QQ收款码</view>
+    
+    </block>
+    <view class="text-white " wx:else>点击扫码/相册中选择二维码</view>
+      <view class="cuIcon-roundcheckfill lg text-white" wx:if="{{qqCode!=''}}"></view>
+
+    </view>
+
+    <view class="flex margin justify-center align-center bg-gradual-green padding radius  shadow "
+      bindtap="createQRcode" style="margin-top:100rpx">
+     <text wx:if="{{isshow!=1}}">合并付款码</text> 
+     <text  wx:else>合并二维码</text> 
+      <!-- <button class="bg-gradual-green padding radius text-center shadow-blur">合并付款码</button> -->
+    </view>
+  </view>
+</view>

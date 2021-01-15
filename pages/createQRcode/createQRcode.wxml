@@ -1,0 +1,14 @@
+<!--pages/createQRcode/createQRcode.wxml-->
+<view class="container">
+<view style="width:100%" class="flex justify-center">
+  <canvas canvas-id="QRcode" style="width:650rpx;height:650rpx">
+
+
+</canvas>
+
+</view>
+
+<view style="width:100%" class="flex ">
+<button class="cu-btn bg-gradual-green margin-tb-sm lg" bindtap="saveImg">保存到相册</button>
+</view>
+</view>

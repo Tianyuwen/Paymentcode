@@ -1,0 +1,4 @@
+/* pages/createQRcode/createQRcode.wxss */
+page{
+  background-color: #ffffff;
+}
