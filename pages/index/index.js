@@ -7,19 +7,10 @@ Page({
     weixinCode:"",
     zfbCode:"",
     qqCode:"",
-    isshow:''
   },
 
   onLoad() {
-wx.request({
-  url: 'https://pay.krjojo.com/1.json',
-  success:(e)=>{
-    console.log(e)
-    this.setData({
-      isshow:e.data
-    })
-  }
-})
+
   },
 
   scanCode(e){
