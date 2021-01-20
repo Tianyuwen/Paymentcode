@@ -1,0 +1,5 @@
+<!--pages/scanCode/scanCode.wxml-->
+<view class="container">
+<textarea class="solids padding"  style="height:80%" value="{{scancodeData}}" placeholder="扫码结果"></textarea>
+<button class="padding bg-gradual-orange margin-top" bindtap="scancode">点击扫码</button>
+</view>

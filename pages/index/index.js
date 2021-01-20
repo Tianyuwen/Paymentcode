@@ -87,5 +87,11 @@ wx.scanCode({
     })
    }
 
+  },
+  scanCode(){
+    wx.navigateTo({
+      url: '/pages/scanCode/scanCode',
+    })
   }
+
 })

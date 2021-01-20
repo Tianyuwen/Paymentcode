@@ -8,8 +8,10 @@
 
 </view>
 </view> -->
-<view class="container bg-white animation-slide-bottom">
-
+<view class=" bg-white animation-slide-bottom">
+<view class="flex justify-end padding">
+<image src="/images/Scancode.svg" style="width:64rpx;height:64rpx" bindtap="scanCode"></image>
+</view>
   <view style="width:100%">
     <view class="flex margin justify-around align-center bg-green padding-xl radius  shadow" bindtap="scanCode"
       data-name="weixin">
